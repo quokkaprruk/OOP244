@@ -1,0 +1,15 @@
+Name: Siripa Purinruk
+Student number: 120453220
+-------------------------------------
+
+I found that the last operator, which is placed outside the class, is very difficult and it took a lot of time to figure it out.
+First of all, I used to declare that function inside as the member function. However, I couldn't run the code because it has an error. So, I moved it out of the class and it works.
+
+Secondly, recursive problem, I have to add "tempmark" variable to get the value from Mark& mark and assign it to "value" variable like this: value += tempmark;, otherwise, it wll cause stack overflow.
+
+Thirdly, the result is not as expected when I used int operator+=(int value, Mark& mark) instead of int operator+=(int& value, Mark& mark). That's because the original value will not be changed without passing it by reference.
+
+Moreover, at first, I have several private variables such as int m_mark =0, double m_gpa = 0.0, char m_grade = '\0'. Therefore, when the first statement is executed, it didn't go to operator int() const but go to Mark::operator char() const instead.
+
+
+

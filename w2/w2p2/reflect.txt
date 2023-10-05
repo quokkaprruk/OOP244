@@ -1,0 +1,12 @@
+Workshop 2 part 2
+Name: Siripa Purinruk
+Number: 120453220
+Section: nee
+
+ 
+In parameter is an input parameter. It passes data to the function to perform operations. However, the callee function can't modify the original variable. On the other hand, an out parameter is used to return a value or modified value from the function, and the modified value can be seen from outside the function. To clarify, in parameters are the inputs for the function and can't be modified, while out parameters are used to return the modified data from the function. Out parameters are often passed by reference, while in parameters are often passed by value.
+
+According to the workshop:
+-The bool load(const char filename[]) function has the filename parameter as an in parameter because it is passed to the function as an input, but it is not modified by the function.
+
+-The bool read(char postCode[]) function has the postCode parameter as an in parameter because it passes the string for reading purposes

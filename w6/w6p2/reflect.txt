@@ -1,0 +1,30 @@
+Student Name: Siripa Purinruk
+Student ID: 120453220
+
+-----------------------------
+The difficulties in this workshop are as follows:
+
+- There was an error due to not initializing nullptr in 
+Line* m_textLines{nullptr}; and char* m_filename{nullptr}.
+
+- I implemented the Line(){} constructor in the .cpp file. 
+However, it caused an error due to the constructor redefinition 
+since the code already provides a default constructor in the 
+class definition.
+
+- The usage of c_str() was initially confusing for me, but 
+now I understand that it converts a string to an array of 
+characters and returns a pointer to that array.
+
+- I spent a lot of time on the copy constructor and copy 
+assignment operator because I initially tried to reuse setNoOfLines() 
+and loadText() to save the content of the source file. However, 
+I later realized that it was incorrect. As a result, I wrote new code 
+to allocate memory and copy the source content to the current content.
+
+NOTE: I lent Ka YING CHAN 5 functions as follows:
+TextFile(const TextFile& TF)
+TextFile& operator=(const TextFile& TF)
+ostream& view(ostream& ostr)const
+istream& getFile(istream& istr)
+const char* operator[](unsigned index)const

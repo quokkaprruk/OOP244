@@ -1,0 +1,21 @@
+Siripa Purinruk
+120453220
+--------------------
+Difficulties in ws 9:
+ 
+- void Text::read() is hard at first because I don't understand the 
+instruction.
+- void HtmlText::write(std::ostream& os)const is confusing because I don't know how to use the protected index operator of the base class.
+
+
+Difficulties in ms3:
+- The most difficult part is std::istream& Date::read(std::istream& is ). I got unbehavior output because I didn't comment 'is.clear(); '. At first, I dont think that the problem will be in the Date.cpp file. So, I only rechecked every cpp file except Date.cpp. As a result, I spent so many hours to fix this.
+
+-I forgot the if condition to check whether the Streamable object is valid or not in std::ostream& operator<< (std::ostream& os, const Streamable& stream), leading to error and couldntt print anything.
+
+- In std::istream& Publication::read(std::istream& istr), I spent some time to understnd how to use getline properly. For example,
+istr.getline(temp_shelfId, SDDS_SHELF_ID_LEN +1, '\t');, it reads the characters from input stream and store in temp_shelfId. Additionally, it will stop reading when the number of characters 'SDDS_SHELF_ID_LEN' is read or  '\t'(the delimeter) is read.
+
+My mistake is I didn't use (SDDS_SHELF_ID_LEN) + 1. So, it had overflow.
+
+- In bool Publication::conIO(std::ios& iosObj)const,  I didn't understand the instruction and the purpose of it. Therefore, it also took a while to implement although it isn't hard.

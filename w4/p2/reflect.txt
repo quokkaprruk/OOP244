@@ -1,0 +1,6 @@
+Name: Siripa Purinruk
+No: 120453220
+Workshop 4
+---------------------------------------------------------------------
+
+To complete this workshop, I've learned about the importances of memory allocation and memory deallocation becuase I was struggling to fix my code when I copy the string into another variables. To clarify, I stuck in setDefaultLabel() function when I use l_frame[0] = '\0'; instead of l_frame = nullptr;, that's because I declare char* l_label in Label.h as a pointer and I was trying to access l_frame[0] or to use strcpy directly on l_frame. As a result, I got several errors. Additionally, I encountered an issue with the scanf function. I used scanf("%70[^\n]%*c", strContent);, which required an extra newline character to be entered. To resolve this, I removed %*c as it caused the program to ignore a character and added confusion.

@@ -1,0 +1,14 @@
+In line number 50 of your output:
+The output should be:
+The Lunch Menu is not empty and has 3 menu items.
+^
+But your output is: 
+==173554== Conditional jump or move depends on uninitialised value(s)
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [T] ASCII code(84)
+but you printed
+  [=] ASCII code(61)
+

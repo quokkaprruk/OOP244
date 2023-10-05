@@ -1,0 +1,26 @@
+Siripa Purinruk
+120453220
+--------------------------------
+difficulties in WS10, MS4, MS5
+--------------------------------
+WS10 Difficulties:
+- listArrayElements function doesn't print 7 numbers for Car Array.
+So, I did hard-coding in main.cpp. " Car C[7]"
+
+Requirements for 2 template in nList.h
+1. search function template
+  - The equality operator (==) must be defined for the type1 in the if condition (arrData[i]==keyValue).
+  - keyValue hasto be const to compare with the elements in the 'arrData' array
+
+2. listArrayElements function template
+ - Must have an insert operator (<<) defined to print their values to the standard output stream.
+
+
+MS4 Difficulties:
+- I had a problem in this std::istream& Publication::read(std::istream& istr) function due to using "getline" incorrectly.
+
+MS5 Difficulties:
+- The main problem is with the destructor and ms56, which is about error handling. I completely forgot to add the destructor for the "Publication* a_PPA" variable. Additionally, there was a logical mistake while checking for valid membership in the checkOutPub() function, causing my code to exit with an error code, and it took many hours to fix.
+- In the load() function, I learned from this MS that we can use "file >> type," which serves a similar purpose to "cin >> ...". Secondly, the condition for checking the read operation is important. Initially, I thought that "for (int i = 0; file && i < SDDS_LIBRARY_CAPACITY; i++)" was enough for checking the reading operations. However, I realized that we need the second if condition inside the for loop in order to check the type and add a new Publication.
+- In the search() function, I had a problem with the condition for inserting "a_PPA[i]" into "PublicationSelector pub" in three different modes.
+- The void newPublication() function also took some time to understand the instructions and grasp the logic behind it.

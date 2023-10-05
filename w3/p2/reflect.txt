@@ -1,0 +1,9 @@
+Student Name: Siripa Purinruk
+Student No: 120453220
+
+
+- I have learned how to use public functions and private functions in C++ to access the values of variables that are set to private by default in a class. Based on my understanding, I declare public functions when I need them to be accessed from other parts of the program. On the other hand, private functions are used when I want to restrict access to modifying the variables or when they don't need to be accessed by other users.
+
+- In this workshop, I faced some difficulties in understanding the steps from the function in CalorieList.cpp to Food.cpp. It took me some time to grasp how these functions are related to each other. Another issue I encountered was when I used bool isValid() without declaring "const" after the prototype, along with if (!f_items[i].isValid()) in Food.cpp, which is declared as a const. This caused an error in the program. Therefore, I fixed it by specify const in bool CalorieList::isValid() const; to match declaration.
+
+

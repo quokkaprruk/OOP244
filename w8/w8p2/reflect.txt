@@ -1,0 +1,15 @@
+Student Name: Siripa Purinruk
+Student ID: 120453220
+
+-----------------------------
+Difficulties in ms8: No big difficulties.
+- Only a little confusion about the keyword "virtual"
+and "override" but, currently, I understood how to use it correctly because I found that "override" keyword is to indicate that a member function in a derived class is intended to override a virtual function from its base class.
+- The error from declaring the copy assignment operator in LblShape class because LblShape inherits from Shape and Shape class is an abstract class. So, I cant declare "LblShape& operator=(const LblShape src) = delete;". It has to be "LblShape& operator=(const LblShape) = delete;" because I cannot have a copy assignment operator that takes an object of the abstract class as a parameter.
+
+
+Difficulties in MS2:
+- I got an error when I initialized m_mainMenu.m_title,
+m_exitMenu.m_title in LibApp.h. It said "error use of deleted function". So, I have to initialized in in LibApp.cpp file like this: LibApp::LibApp():m_mainMenu("Seneca Library Application"), m_exitMenu("Changes....do?")
+
+- There was a confusion in bool confirm(const char* message) and std::ostream& run(std::ostream& os) function. The cause of the confusion is I didn't understand the instructions. So, I used the wrong logic, leading to unmatching output.

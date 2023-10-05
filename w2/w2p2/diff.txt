@@ -1,0 +1,14 @@
+In line number 9 of your output:
+The output should be:
+1- G1A:  0
+       ^
+But your output is: 
+1- G1A:0
+       ^
+
+Unmatched character details:
+The character in column 8 is supposed to be:
+  [Space] ASCII code(32)
+but you printed
+  [0] ASCII code(48)
+

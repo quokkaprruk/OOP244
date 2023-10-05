@@ -1,0 +1,21 @@
+Student Name: Siripa Purinruk
+Student ID: 120453220
+
+-----------------------------
+In ws7, I didn't encounter any significant challenges. The only thing I needed to focus on was correctly declaring the truck constructor that inherits from the MotorVehicle class.
+
+The difficulties in ms1 are as follows:
+In Menu.cpp,
+- I was getting anerror due to not initializing
+unsigned menuItemCount = 0; in Menu.h file.
+- There was an error in the insertion operator:
+Menu& Menu::operator<<(const char* menuitemContent),
+this error arose because I didn't allocate memory for m_items,
+which is the MenuItem object, in Menu class. 
+I was so confused about this allocation
+because since in previous workshops we allocated memory for variables with integer sizes, for example: m_name = new char[strlen(newname)+1]. However, in this milestone, it became m_items[menuItemCount] = new MenuItem(menuitemContent). 
+
+In Date.cpp,
+- At first, I didn't truly understand how to use ignore() and fail() in std::istream& Date::read(std::istream& is ) but now I understood that we will use ignore() to discard only 1 character in Date.cpp file.
+- Also, I was confused between using !is and is.fail() in an if condition after taking user inputs for year/month/day. However, now, I understood that is.fail() checks for failures in all the inputs(year, month, day). If it returns true, it means there was an error or unexpected behavior while attempting to read the data.
+On the other hand, if we use "if(!cin)" condition, we need to check each input individually.

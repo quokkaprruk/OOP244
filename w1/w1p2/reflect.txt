@@ -1,0 +1,19 @@
+Reflection
+
+Student: Siripa Purinruk
+ID: 120453220
+Date: 19/05/2023
+
+For lab part workshop, the difficulty that I have faced during completing this workshop are following:
+
+1.	In file.h, it causes a problem because I didn’t include “ShoppingRec.h” at first. Therefore, it takes a while to find the solution and fix the code.
+
+2.	In .cpp file, similarly, including .h file in each .cpp file requires the understanding of the function in namespace sdds. Therefore, reviewing the code in order to include .h file takes some time.
+
+3.	Syntax, confused about using “namespace sdds” and “using namespace sdds”. At first, I used “using namespace sdds” in all .cpp file. However, I realized that I used it incorrectly, therefore, I put it in “ShoppingListApp.cpp” which is main only.
+
+For DIY part workshop, the difficulty are following:
+
+1.	The function that it took longer time that the others is “strStr” because I was confused about the condition inside 2 For-loops.
+
+
